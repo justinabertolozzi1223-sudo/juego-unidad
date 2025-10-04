@@ -1,6 +1,8 @@
-git init
-git add .
-git commit -m "Versión inicial del juego"
-git branch -M main
-git remote add origin https://github.com/justinabertolozzi1223-sudo/juego-unidad.git
-git push -u origin main
+// vite.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  build: { outDir: 'dist' }
+})
